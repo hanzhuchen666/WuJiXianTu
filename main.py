@@ -174,7 +174,8 @@ class MessageBox:
         pass
 
     def readnumber(self):
-        pass
+        self.screenshot = d.screenshot(format='opencv')
+        self.screenshot = self.screenshot[self.locationbox[1]:self.locationbox[3], self.locationbox[0]:self.locationbox[2]]
 
     def enternumber(self):
         pass
